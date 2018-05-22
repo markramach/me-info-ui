@@ -13,12 +13,16 @@
   }
   .navbar-brand {
     color: $primary;
-    @include script-font;
+   @include heading-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
       color: darken($primary, 10%);
+    }
+    .navbar-logo {
+      height : 18px;
+      margin-right: 5px;
     }
   }
   .navbar-nav {
@@ -67,6 +71,10 @@
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        .navbar-logo {
+          height : 14px;
+          margin-right: 4px;
+        }
       }
     }
   }

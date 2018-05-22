@@ -13,15 +13,23 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #e73bde;
 }
 
 a:hover {
-  color: #fec503;
+  color: #d51acb;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #e73bde !important;
+}
+
+.text-secondary {
+  color: #FED136 !important;
+}
+
+.text-tertiary {
+  color: #868e96 !important;
 }
 
 h1,
@@ -70,13 +78,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #e73bde;
+  border-color: #e73bde;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #e01bd6 !important;
+  border-color: #e01bd6 !important;
   color: white;
 }
 
@@ -85,12 +93,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #e73bde;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #e73bde;
   text-shadow: none;
 }
 
@@ -113,17 +121,22 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #e73bde;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  color: #e73bde;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #d51acb;
+}
+
+#mainNav .navbar-brand .navbar-logo {
+  height: 18px;
+  margin-right: 5px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -136,7 +149,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #e73bde;
 }
 
 @media (min-width: 992px) {
@@ -167,12 +180,16 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
+  #mainNav.navbar-shrink .navbar-brand .navbar-logo {
+    height: 14px;
+    margin-right: 4px;
+  }
 }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-color: #343a40;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -188,9 +205,9 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
+  font-size: 18px;
   font-style: italic;
-  line-height: 22px;
+  line-height: 18px;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -199,7 +216,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -209,9 +226,9 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
+    font-size: 24px;
     font-style: italic;
-    line-height: 40px;
+    line-height: 24px;
     margin-bottom: 25px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
@@ -219,7 +236,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
@@ -229,12 +246,12 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#projects .portfolio-item {
   right: 0;
   margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#projects .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   max-width: 400px;
@@ -242,7 +259,7 @@ header.masthead .intro-text .intro-heading {
   cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#projects .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -250,14 +267,14 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(231, 59, 222, 0.9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#projects .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -268,16 +285,16 @@ header.masthead .intro-text .intro-heading {
   color: white;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#projects .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
@@ -285,19 +302,19 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#projects .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#projects .portfolio-item .portfolio-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#portfolio * {
+#projects * {
   z-index: 2;
 }
 
@@ -452,9 +469,7 @@ header.masthead .intro-text .intro-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
-  border-radius: 100%;
-  background-color: #fed136;
+  background-color: none;
 }
 
 .timeline > li .timeline-image h4 {
@@ -625,7 +640,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #e73bde;
   box-shadow: none;
 }
 
@@ -695,5 +710,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #e73bde;
 }
