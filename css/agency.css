@@ -28,6 +28,10 @@ a:hover {
   color: #FED136 !important;
 }
 
+.text-secondary-400 {
+  color: #ced4da !important;
+}
+
 .text-tertiary {
   color: #868e96 !important;
 }
